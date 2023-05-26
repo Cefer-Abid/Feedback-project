@@ -1,0 +1,75 @@
+.container--emptyPage {
+  height: 600px;
+  border-radius: 10px;
+  background-color: white;
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.empty--content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+
+.empty__logo-div{
+    display: flex;
+    justify-content: center;
+}
+
+.content__text--div {
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.text--div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.empty--title {
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: #3a4374;
+}
+
+.empty--text {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #647196;
+}
+
+.empty__btn-div{
+    display: flex;
+   justify-content: center;
+}
+
+.empty__btn--feedback {
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  background: #ad1fea;
+  transition: background 0.1s;
+  text-decoration: none;
+
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f2f4fe;
+}

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f8fd;
+}
+
+.container--add-feedback {
+  width: 540px;
+  margin: 90px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.header--btn-div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.go-back {
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+}
+
+.content--add-feedback {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 42px;
+  background: white;
+  border-radius: 10px;
+}
+
+.logo-div {
+  position: absolute;
+  left: 40px;
+  top: -28px;
+}
+.logo-div::after {
+  content: "+";
+  position: absolute;
+  left: 17px;
+  top: 5px;
+  color: white;
+  height: 16px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.add-feedback--logo {
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+}
+
+.title-content {
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: #3a4374;
+}
+
+.new-feedback--section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.include-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info-title {
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.194444px;
+  color: #3a4374;
+}
+
+.text-div span {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+}
+
+.add-feedback__btn-div {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.new-feedback--input {
+  height: 48px;
+  background: #f7f8fd;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+}
+.new-feedback--input:hover {
+  border: 2px solid #4661e6;
+}
+
+.input-detail {
+  height: 96px;
+}
+
+.btn--cancel,
+.btn--new-feedback {
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  background: #ad1fea;
+  transition: background 0.1s;
+
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f2f4fe;
+}
+.btn--new-feedback:hover,
+.btn--cancel:hover {
+  opacity: 0.8;
+}
+
+.btn--new-feedback:active,
+.btn--cancel:active {
+  opacity: 1;
+}
+
+.btn--cancel {
+  background: #3a4374;
+}

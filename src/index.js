@@ -1,17 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./css/index.css";
+import "./css/addFeedback.css";
+import "./css/detailFeedback.css";
+import "./css/emptyView.css";
+import Home from "./pages/home";
+import AddFeedbackPage from "./pages/addFeedbackPage";
+import ProductDetailPage from "./pages/productDetailPage";
+import RoadmapPage from "./pages/roadmapPage";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/new-feedback",
+    element: <AddFeedbackPage />,
+  },
+  {
+    path: "/product/:productId",
+    element: <ProductDetailPage />,
+  },
+  {
+    path: "/roadmap-page",
+    element: <RoadmapPage />,
+  },
+]);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={router} />);
